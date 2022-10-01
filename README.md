@@ -1,2 +1,2 @@
 # Hangman-game
-old school hangman game :)
+Old school hangman game :)
