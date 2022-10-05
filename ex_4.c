@@ -4,8 +4,6 @@
 * @since 30/11/2021
 ***********************/
 
-#define _CRT_SECURE_NO_WARNINGS
-
 #include <stdio.h>
 #include <math.h>
 #include <string.h>
@@ -23,6 +21,15 @@
 #define BOLD_RED "\033[1;31m"
 #define BLUE "\033[0;34m"
 #define SET_COLOR "\033[0m"
+
+void printChoice(char str1[][SIZE_OF_STRING], int counter);
+void alphaSort(char str1[][SIZE_OF_STRING], int counter);
+int getChoice(char str1[][SIZE_OF_STRING]);
+char* chooseChoice(char str1[][SIZE_OF_STRING], int numOfChoices);
+int lines(char word[SIZE_OF_STRING], char found[SIZE_OF_STRING]);
+void printHangingMan(int mistake);
+void gameResult(int mistakes, char word[], int countLines);
+void theGame(char found[], char word[], int countLines, char clue[SIZE_OF_STRING]);
 
 /******************
 * Function Name: printChoice
